@@ -1,0 +1,97 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;untitled&gt;">
+    <CLASSES>
+      <root url="file://C:/go/src/crypto" />
+      <root url="file://C:/go/src/strconv" />
+      <root url="file://C:/go/src/unicode" />
+      <root url="file://C:/go/src/cmd" />
+      <root url="file://C:/go/src/math" />
+      <root url="file://C:/go/src/errors" />
+      <root url="file://C:/go/src/hash" />
+      <root url="file://C:/go/src/regexp" />
+      <root url="file://C:/go/src/syscall" />
+      <root url="file://C:/go/src/bufio" />
+      <root url="file://C:/go/src/internal" />
+      <root url="file://C:/go/src/expvar" />
+      <root url="file://C:/go/src/flag" />
+      <root url="file://C:/go/src/log" />
+      <root url="file://C:/go/src/unsafe" />
+      <root url="file://C:/go/src/database" />
+      <root url="file://C:/go/src/strings" />
+      <root url="file://C:/go/src/vendor" />
+      <root url="file://C:/go/src/debug" />
+      <root url="file://C:/go/src/os" />
+      <root url="file://C:/go/src/builtin" />
+      <root url="file://C:/go/src/go" />
+      <root url="file://C:/go/src/bytes" />
+      <root url="file://C:/go/src/time" />
+      <root url="file://C:/go/src/container" />
+      <root url="file://C:/go/src/mime" />
+      <root url="file://C:/go/src/fmt" />
+      <root url="file://C:/go/src/path" />
+      <root url="file://C:/go/src/reflect" />
+      <root url="file://C:/go/src/context" />
+      <root url="file://C:/go/src/html" />
+      <root url="file://C:/go/src/text" />
+      <root url="file://C:/go/src/net" />
+      <root url="file://C:/go/src/image" />
+      <root url="file://C:/go/src/compress" />
+      <root url="file://C:/go/src/io" />
+      <root url="file://C:/go/src/testing" />
+      <root url="file://C:/go/src/index" />
+      <root url="file://C:/go/src/runtime" />
+      <root url="file://C:/go/src/archive" />
+      <root url="file://C:/go/src/sort" />
+      <root url="file://C:/go/src/encoding" />
+      <root url="file://C:/go/src/sync" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://C:/go/src/crypto" />
+      <root url="file://C:/go/src/strconv" />
+      <root url="file://C:/go/src/unicode" />
+      <root url="file://C:/go/src/cmd" />
+      <root url="file://C:/go/src/math" />
+      <root url="file://C:/go/src/errors" />
+      <root url="file://C:/go/src/hash" />
+      <root url="file://C:/go/src/regexp" />
+      <root url="file://C:/go/src/syscall" />
+      <root url="file://C:/go/src/bufio" />
+      <root url="file://C:/go/src/internal" />
+      <root url="file://C:/go/src/expvar" />
+      <root url="file://C:/go/src/flag" />
+      <root url="file://C:/go/src/log" />
+      <root url="file://C:/go/src/unsafe" />
+      <root url="file://C:/go/src/database" />
+      <root url="file://C:/go/src/strings" />
+      <root url="file://C:/go/src/vendor" />
+      <root url="file://C:/go/src/debug" />
+      <root url="file://C:/go/src/os" />
+      <root url="file://C:/go/src/builtin" />
+      <root url="file://C:/go/src/go" />
+      <root url="file://C:/go/src/bytes" />
+      <root url="file://C:/go/src/time" />
+      <root url="file://C:/go/src/container" />
+      <root url="file://C:/go/src/mime" />
+      <root url="file://C:/go/src/fmt" />
+      <root url="file://C:/go/src/path" />
+      <root url="file://C:/go/src/reflect" />
+      <root url="file://C:/go/src/context" />
+      <root url="file://C:/go/src/html" />
+      <root url="file://C:/go/src/text" />
+      <root url="file://C:/go/src/net" />
+      <root url="file://C:/go/src/image" />
+      <root url="file://C:/go/src/compress" />
+      <root url="file://C:/go/src/io" />
+      <root url="file://C:/go/src/testing" />
+      <root url="file://C:/go/src/index" />
+      <root url="file://C:/go/src/runtime" />
+      <root url="file://C:/go/src/archive" />
+      <root url="file://C:/go/src/sort" />
+      <root url="file://C:/go/src/encoding" />
+      <root url="file://C:/go/src/sync" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
