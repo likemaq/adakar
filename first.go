@@ -5,7 +5,6 @@ import (
 	"io/ioutil"
 	"fmt"
 	"regexp"
-	//"bytes"
 	"strings"
 	"log"
 )
@@ -27,16 +26,13 @@ func getin(url, se string) (string,string){
 
 func find(inp, sear string ) {
 	var mer string
-	//fmt.Println(len(string(search)))
 	up := strings.ToUpper(string(sear[0]))
 	mer=up;
 	n := 1
 	for n<len(sear){
 		mer+=string(sear[n])
-	//	fmt.Println(string(sear[n]))
 		n++
 	}
-	//fmt.Println(mer)
 	resp, err := http.Get(inp)
 	if err != nil {
 		log.Fatal(err)
@@ -48,11 +44,9 @@ func find(inp, sear string ) {
 	defer resp.Body.Close()
 	txt := string(bytes)
 	cas := strings.ToUpper(sear)
-	//fmt.Println(cas)
 	count:=0;
 	r := regexp.MustCompile("\\s"+sear+"|"+cas+"|"+mer+"\\s")
 	s := r.FindAllString(txt, -1)
-	//fmt.Println(s[5])
 	for i := 0;i< len(s);i++{
 		fmt.Println(s[i])
 		count++
