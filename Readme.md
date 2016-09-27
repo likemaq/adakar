@@ -1,6 +1,7 @@
 Adakar
 
-A tool used to search for any word lower case or upper case like "the, The or THE" over http connection.
+A tool used to search for any word lower case or upper case like "the, The or THE" over http connection and tell how many times that number
+has repeated.
 by sunny79979
 
 Usage:
