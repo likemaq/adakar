@@ -13,7 +13,8 @@ func main(){
 
 	var search, in string
 	in,search = getin(in, search)
-	find(in,search)
+	z :=find(in,search)
+	fmt.Println(z)
 }
 
 func getin(url, se string) (string,string){
@@ -24,10 +25,10 @@ func getin(url, se string) (string,string){
 	return url,se
 }
 
-func find(inp, sear string ) {
+func find(inp, sear string ) (int){
 	var mer string
 	up := strings.ToUpper(string(sear[0]))
-	mer=up;
+	mer=up
 	n := 1
 	for n<len(sear){
 		mer+=string(sear[n])
@@ -48,9 +49,8 @@ func find(inp, sear string ) {
 	r := regexp.MustCompile("\\s"+sear+"|"+cas+"|"+mer+"\\s")
 	s := r.FindAllString(txt, -1)
 	for i := 0;i< len(s);i++{
-		fmt.Println(s[i])
 		count++
 	}
-	fmt.Println(count)
+	return count
 
 }
