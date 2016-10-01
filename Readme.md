@@ -22,3 +22,12 @@ There are two prompts:
 -enter the word you wish to search
 
 You should get the number of times the word has repeated.
+
+Testing:
+There are three cases that the test program runs with the code.
+If you have cloned the folder. Then the test file will be in folder as first_test.go
+To run it type:
+go test
+
+Log file:
+test.txt will be generated if not present already to log all the errors for the expected test case result.
