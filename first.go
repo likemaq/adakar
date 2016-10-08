@@ -1,5 +1,7 @@
 package main
+/*
 
+*/
 import (
 	"net/http"
 	"io/ioutil"
@@ -7,50 +9,91 @@ import (
 	"regexp"
 	"strings"
 	"log"
+	"os"
 )
 
 func main(){
-
-	var search, in string
-	in,search = getin(in, search)
-	z :=find(in,search)
-	fmt.Println(z)
+	menu()
+	exitprog();
 }
 
-func getin(url, se string) (string,string){
-	fmt.Println("Enter URL: ")
+func menu() {
+	var url, searchword string
+	fmt.Println("Enter URL:(http://***.** or https://***.**) ")
 	fmt.Scanln(&url)
-	fmt.Println("Search Repetition of a Word: ")
-	fmt.Scanln(&se)
-	return url,se
+	fmt.Println("Enter the word for Repetition Count: ")
+	fmt.Scanln(&searchword)
+	if len(searchword) == 0{
+		fmt.Println("No word entered. Enter Again.")
+		menu()
+	}
+	count := find(url, searchword)
+	print(count)
 }
 
-func find(inp, sear string ) (int){
+func exitprog(){
+	var exit string
+	fmt.Println("Exit? Y | N : ")
+	fmt.Scanln(&exit)
+	switch exit{
+	case "N":
+		menu()
+		exitprog()
+	case "Y":
+		os.Exit(0)
+	default:
+		fmt.Println("Invalid Input Enter again")
+		exitprog()
+	}
+}
+
+func find(link, search string)(int){
+	bodytxt,connected := connecturl(link)
+	if connected != true{
+		fmt.Println("Invalid URL")
+		exitprog()
+	}
+	uperfirst := upercasing(search)
+	capitalword := strings.ToUpper(search)
+	r := regexp.MustCompile(mergestring(search,capitalword,uperfirst))
+	s := r.FindAllString(bodytxt, -1)
+	count := 0
+	for i := 0;i< len(s);i++{
+		count++
+	}
+	return count
+}
+
+func upercasing(word string)(string){
 	var mer string
-	up := strings.ToUpper(string(sear[0]))
-	mer=up
+	mer = strings.ToUpper(string(word[0]))
 	n := 1
-	for n<len(sear){
-		mer+=string(sear[n])
+	for n<len(word){
+		mer+=string(word[n])
 		n++
 	}
-	resp, err := http.Get(inp)
+	return mer
+}
+
+func mergestring(one, two, three string)(string){
+	return "\\s"+one+"|"+two+"|"+three+"\\s"
+}
+
+func connecturl(website string) (string, bool){
+	resp, err := http.Get(website)
+	connected := true
 	if err != nil {
-		log.Fatal(err)
+		connected = false
+		return "Failed", connected
 	}
 	bytes, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer resp.Body.Close()
-	txt := string(bytes)
-	cas := strings.ToUpper(sear)
-	count:=0;
-	r := regexp.MustCompile("\\s"+sear+"|"+cas+"|"+mer+"\\s")
-	s := r.FindAllString(txt, -1)
-	for i := 0;i< len(s);i++{
-		count++
-	}
-	return count
+	return string(bytes), connected
+}
 
+func print(number int){
+	fmt.Println(number)
 }
