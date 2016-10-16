@@ -7,6 +7,7 @@ import (
         "os"
 )
 
+//system integration test
 func TestURLS(t *testing.T){
         cases := []struct{ url string; search string; expected int}{
                 {"https://google.com", "the", 1},
@@ -40,6 +41,7 @@ func TestURLS(t *testing.T){
 	
 }
 
+//unit test of a function
 func TestUPERCASE(t *testing.T){
 	cases := []struct{ word string; expected string }{
 		{"the", "The"},
@@ -55,6 +57,7 @@ func TestUPERCASE(t *testing.T){
 	}
 }
 
+//unit test of a function
 func TestConnection(t *testing.T){
 	cases := []struct{ url string; expected bool}{
 		{"https://google.com",true},
@@ -71,6 +74,7 @@ func TestConnection(t *testing.T){
 	}
 }
 
+//unit test of a function
 func TestMerge(t *testing.T){
 	cases := []struct{one string; two string; three string; expected string}{
 		{"the","The","THE","\\sthe|The|THE\\s"},
