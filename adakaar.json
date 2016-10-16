@@ -1,0 +1,11 @@
+{
+    "defaulturl": "http://blank.org",
+    "url_input_message" : "Enter URL:(http://***.** or https://***.**)",
+    "word_for_repetition" : "Enter the word for Repetition Count: ",
+    "error_word" : "No word entered. Enter Again.",
+    "exit" : "Exit? Y | N : ",
+    "invalid_input_for_exit" : "Invalid Input Enter again",
+    "invalid_url" : "Invalid URL"
+}
+
+
