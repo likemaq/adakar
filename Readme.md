@@ -25,7 +25,7 @@ You should get the number of times the word has repeated.
 
 Testing:
 There are three cases that the test program runs with the code.
-If you have cloned the folder. Then the test file will be in folder as first_test.go
+If you have cloned the folder. Then the test file will be in folder as wordsearch_test.go
 To run it type:
 go test
 
