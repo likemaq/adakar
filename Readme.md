@@ -9,7 +9,7 @@ Usage:
 -Type "git clone https://github.com/sunny79979/adakar.git" in your terminal
 -"cd" to the cloned git repository
 -"go build" from inside the repository folder
--"go run first.go"
+-"go run wordsearch.go"
 
 Outputs:
 There are two prompts:
