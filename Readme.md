@@ -7,9 +7,9 @@ by usman79979
 Usage:
 
 - git clone the repo in your terminal
--"cd" to the cloned git repository
--"go build" from inside the repository folder
--"go run wordsearch.go"
+- "cd" to the cloned git repository
+- "go build" from inside the repository folder
+- "go run wordsearch.go"
 
 Outputs:
 There are two prompts:
