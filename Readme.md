@@ -6,7 +6,7 @@ by usman79979
 
 Usage:
 
--Type "git clone https://github.com/sunny79979/adakar.git" in your terminal
+-Type git clone the repo in your terminal
 -"cd" to the cloned git repository
 -"go build" from inside the repository folder
 -"go run wordsearch.go"
